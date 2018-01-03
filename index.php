@@ -53,6 +53,76 @@
 		'title' => 'portfolio'
 	],
 	];
+
+	$list = [
+	[
+		'icon' => 'icon fa-comment',
+		'title' => 'Smoke on the water',
+		'text' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam eveniet aspernatur doloremque praesentium maxime ut suscipit non deserunt id, reprehenderit.'
+	],
+	[
+		'icon' => 'icon fa-refresh',
+		'title' => 'Smoke on the water',
+		'text' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam eveniet aspernatur doloremque praesentium maxime ut suscipit non deserunt id, reprehenderit.'
+	],
+	[
+		'icon' => 'icon fa-picture-o',
+		'title' => 'Smoke on the water',
+		'text' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam eveniet aspernatur doloremque praesentium maxime ut suscipit non deserunt id, reprehenderit.'
+	],
+	[
+		'icon' => 'icon fa-cog',
+		'title' => 'Smoke on the water',
+		'text' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam eveniet aspernatur doloremque praesentium maxime ut suscipit non deserunt id, reprehenderit.'
+	],
+	[
+		'icon' => 'icon fa-wrench',
+		'title' => 'Smoke on the water',
+		'text' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam eveniet aspernatur doloremque praesentium maxime ut suscipit non deserunt id, reprehenderit.'
+	],
+	[
+		'icon' => 'icon fa-check',
+		'title' => 'Smoke on the water',
+		'text' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam eveniet aspernatur doloremque praesentium maxime ut suscipit non deserunt id, reprehenderit.'
+	],
+
+	];
+
+	$contact = [
+	[
+		'icon' =>'icon fa-home',
+		'title' =>'Mailing address',
+		'info' =>'Untitled Corporation<br/>
+				1234 Somewhere Rd #987<br/>
+				Nashville, TN 00000-0000'
+	],
+	[
+		'icon' =>'icon fa-comment',
+		'title' =>'Social',
+		'info' => [
+		[
+			'url' => '@untitled-corp'
+		],
+		[
+			'url' =>'linkedin.com/untitled'
+		],
+		[
+			'url' => 'facebook.com/untitled'
+		]
+		]
+
+	],
+	[
+		'icon' => 'icon fa-envelope',
+		'title' => 'Email',
+		'info' => 'info@untitled.tld'
+	],
+	[
+		'icon' =>'icon fa-phone',
+		'title' => 'Phone',
+		'info' => '(000)-555-32223'
+	],
+	];
 	
 ?>
 <html>
@@ -107,29 +177,7 @@
 									<?php } ?>
 									</li>
 									<?php } ?>
-									<li class="current"><a href="index.html">Home</a></li>
-									<li>
-										<a href="#">Dropdown</a>
-										<ul>
-											<li><a href="#">Lorem ipsum</a></li>
-											<li><a href="#">Magna veroeros</a></li>
-											<li><a href="#">Etiam nisl</a></li>
-											<li>
-												<a href="#">Sed consequat</a>
-												<ul>
-													<li><a href="#">Lorem dolor</a></li>
-													<li><a href="#">Amet consequat</a></li>
-													<li><a href="#">Magna phasellus</a></li>
-													<li><a href="#">Etiam nisl</a></li>
-													<li><a href="#">Sed feugiat</a></li>
-												</ul>
-											</li>
-											<li><a href="#">Nisl tempus</a></li>
-										</ul>
-									</li>
-									<li><a href="left-sidebar.html">Left Sidebar</a></li>
-									<li><a href="right-sidebar.html">Right Sidebar</a></li>
-									<li><a href="no-sidebar.html">Not a Sidebar</a></li>
+								
 								</ul>
 							</nav>
 
@@ -172,47 +220,25 @@
 								</header>
 								<div class="feature-list">
 									<div class="row">
+									<?php $counter = 1; ?>
+									<?php foreach ($list as $item) { ?>
+										
 										<div class="6u 12u(mobile)">
 											<section>
-												<h3 class="icon fa-comment">Mattis velit diam vulputate</h3>
-												<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
+												<h3 class="<?php echo $item['icon']  ?>"><?php echo $item['title'] ?></h3>
+												<p><?php echo $item['text'] ?></p>
 											</section>
 										</div>
-										<div class="6u 12u(mobile)">
-											<section>
-												<h3 class="icon fa-refresh">Lorem ipsum dolor sit veroeros</h3>
-												<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
-											</section>
-										</div>
-									</div>
-									<div class="row">
-										<div class="6u 12u(mobile)">
-											<section>
-												<h3 class="icon fa-picture-o">Pretium phasellus justo lorem</h3>
-												<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
-											</section>
-										</div>
-										<div class="6u 12u(mobile)">
-											<section>
-												<h3 class="icon fa-cog">Tempus sed pretium orci</h3>
-												<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
-											</section>
-										</div>
-									</div>
-									<div class="row">
-										<div class="6u 12u(mobile)">
-											<section>
-												<h3 class="icon fa-wrench">Aliquam consequat et feugiat</h3>
-												<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
-											</section>
-										</div>
-										<div class="6u 12u(mobile)">
-											<section>
-												<h3 class="icon fa-check">Dolore laoreet aliquam mattis</h3>
-												<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
-											</section>
-										</div>
-									</div>
+										 <?php if($counter % 2== 0) { ?>
+											</div>
+											<div class="row">
+
+										<?php }  ?>
+										
+										<?php $counter++;
+										//echo $counter;
+									 } ?>
+									
 								</div>
 								<ul class="actions actions-centered">
 									<li><a href="#" class="button style1 big">Get Started</a></li>
@@ -310,45 +336,28 @@
 								<!-- Contact -->
 									<section class="feature-list small">
 										<div class="row">
-											<div class="6u 12u(mobile)">
+											<?php $counter = 1; ?>
+											<?php foreach ($contact as $item) { ?>
+												<div class="6u 12u(mobile)">
 												<section>
-													<h3 class="icon fa-home">Mailing Address</h3>
+													<h3 class="<?php echo $item['icon'] ?>"><?php echo $item['title'] ?></h3>
 													<p>
-														Untitled Corporation<br />
-														1234 Somewhere Rd #987<br />
-														Nashville, TN 00000-0000
+														<?php if(is_array($item['info'])) {
+															foreach ($item['info'] as $subitem) { ?>
+																<a href="#"><?php echo $subitem['url'] ?> </a><br/>
+															<?php } 
+														}
+														else echo $item['info']; ?>
 													</p>
 												</section>
 											</div>
-											<div class="6u 12u(mobile)">
-												<section>
-													<h3 class="icon fa-comment">Social</h3>
-													<p>
-														<a href="#">@untitled-corp</a><br />
-														<a href="#">linkedin.com/untitled</a><br />
-														<a href="#">facebook.com/untitled</a>
-													</p>
-												</section>
-											</div>
-										</div>
-										<div class="row">
-											<div class="6u 12u(mobile)">
-												<section>
-													<h3 class="icon fa-envelope">Email</h3>
-													<p>
-														<a href="#">info@untitled.tld</a>
-													</p>
-												</section>
-											</div>
-											<div class="6u 12u(mobile)">
-												<section>
-													<h3 class="icon fa-phone">Phone</h3>
-													<p>
-														(000) 555-0000
-													</p>
-												</section>
-											</div>
-										</div>
+											<?php if($counter % 2 == 0){ ?>
+												</div>
+												<div class="row">
+											<?php } ?>
+											<?php $counter++;
+											} ?>
+										
 									</section>
 
 							</div>
