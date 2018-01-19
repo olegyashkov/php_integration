@@ -88,36 +88,34 @@
 
 	];
 
-	$contact = [
+	$contacts = [
 	[
+		'type' =>'address',
 		'icon' =>'icon fa-home',
 		'title' =>'Mailing address',
-		'info' =>'Untitled Corporation<br/>
-				1234 Somewhere Rd #987<br/>
+		'info' =>'Untitled Corporation
+				1234 Somewhere Rd #987
 				Nashville, TN 00000-0000'
 	],
 	[
+		'type' =>'social',
 		'icon' =>'icon fa-comment',
 		'title' =>'Social',
-		'info' => [
-		[
-			'url' => '@untitled-corp'
-		],
-		[
-			'url' =>'linkedin.com/untitled'
-		],
-		[
-			'url' => 'facebook.com/untitled'
-		]
-		]
+		'info'=>'@untitled-corp
+				linkedin.com/untitled
+				facebook.com/untitled'
+	
+	
 
 	],
 	[
+		'type' => 'email',
 		'icon' => 'icon fa-envelope',
 		'title' => 'Email',
 		'info' => 'info@untitled.tld'
 	],
 	[
+		'type' => 'phone',
 		'icon' =>'icon fa-phone',
 		'title' => 'Phone',
 		'info' => '(000)-555-32223'
@@ -220,7 +218,7 @@
 								</header>
 								<div class="feature-list">
 									<div class="row">
-									<?php $counter = 1; ?>
+									<?php $counter = 0; ?>
 									<?php foreach ($list as $item) { ?>
 										
 										<div class="6u 12u(mobile)">
@@ -229,15 +227,13 @@
 												<p><?php echo $item['text'] ?></p>
 											</section>
 										</div>
-										 <?php if($counter % 2== 0) { ?>
+										 <?php if((++$counter) % 2== 0 AND $counter != count($list)) { ?>
 											</div>
 											<div class="row">
 
 										<?php }  ?>
 										
-										<?php $counter++;
-										//echo $counter;
-									 } ?>
+									<?php } ?>
 									
 								</div>
 								<ul class="actions actions-centered">
@@ -337,7 +333,29 @@
 									<section class="feature-list small">
 										<div class="row">
 											<?php $counter = 1; ?>
-											<?php foreach ($contact as $item) { ?>
+											<?php foreach ($contacts as $item) { ?>
+											<?php 
+											switch ($item['type']) {
+												case 'address':
+													$item['info'] = str_replace("/n", '<br/>', $item['info']);
+													break;
+												case 'social':
+													$content ='';
+													$links = explode("\n" ,$item['info']);
+													foreach ($links as $link) {
+														$content =$content. '<a href="'.$link.'">'.$link.'</a>';
+													}
+													$item['info'] = $content;
+													break;
+												case 'email':
+													$item['info'] = '<a href="mailto:'.$item['info'].'">'.$item['info'].'</a>';
+													break;
+												case 'phone':
+													$item['info'] = '<a href="tel:'.$item['info'].'">'.$item['info'].'</a>';
+													break;
+											
+											}
+											?>
 												<div class="6u 12u(mobile)">
 												<section>
 													<h3 class="<?php echo $item['icon'] ?>"><?php echo $item['title'] ?></h3>
