@@ -1,0 +1,74 @@
+﻿
+January 29, 2018, 20:52
+Имя:Vasya
+Email:vasya@example.ua
+Hello Im Vasya
+===================
+C:\xampp\htdocs\dashboard\test\workspase\homework\php_integration\uploads\6January 29, 2018, 20:56
+Имя:Vasya
+Email:vasya@example.ua
+Hello Im Vasya
+===================
+C:\xampp\htdocs\dashboard\test\workspase\homework\php_integration\uploads\5January 29, 2018, 21:15
+Имя:Vasya
+Email:vasya@example.ua
+Hello Im Vasya
+http://localhost/dashboard/test/workspase/homework/php_integration/http://localhost/dashboard/test/workspase/homework/php_integration/
+http://localhost/dashboard/test/workspase/homework/php_integration/http://localhost/dashboard/test/workspase/homework/php_integration/
+====================
+January 29, 2018, 21:16
+Имя:Vasya
+Email:vasya@example.ua
+Hello Im Vasya
+http://localhost/dashboard/test/workspase/homework/php_integration/
+====================
+January 29, 2018, 21:18
+Имя:Vasya
+Email:vasya@example.ua
+Hello Im Vasya
+http://localhost/dashboard/test/workspase/homework/php_integration/uploads/2/rsj0elwt.jpg
+====================
+January 29, 2018, 21:50
+Имя:Vasya
+Email:vasya@example.ua
+Hello Im Vasya
+Файл#1http://localhost/dashboard/test/workspase/homework/php_integration/uploads/2/l1zqgh3o.jpg
+====================
+January 29, 2018, 21:51
+Имя:Vasya
+Email:vasya@example.ua
+Hello Im Vasya
+Файл#1http://localhost/dashboard/test/workspase/homework/php_integration/uploads/7/qusoac9r.jpg
+====================
+Файл#1http://localhost/dashboard/test/workspase/homework/php_integration/uploads/3/zhnktzwg.jpg
+====================
+January 29, 2018, 22:09
+Имя:Vasya
+Email:vasya@example.ua
+Hello Im Vasya
+Файл#1 : http://localhost/dashboard/test/workspase/homework/php_integration/uploads/10/y74pydwz.jpg
+====================
+January 31, 2018, 13:34
+Имя:petya
+Email:petya@example.ua
+Hello Im petya
+Файл#0 : http://localhost/dashboard/test/workspase/homework/php_integration/uploads/10/20j5k6rc.jpg
+====================
+January 31, 2018, 13:36
+Имя:Vasyan
+Email:vasyan@example.ua
+Hello Im Vasyan
+Файл#1 : http://localhost/dashboard/test/workspase/homework/php_integration/uploads/2/vj2jbo04.jpg
+====================
+January 31, 2018, 13:39
+Имя:Vasya
+Email:vasya@example.ua
+Hello Im Vasya
+Файл#1 : http://localhost/dashboard/test/workspase/homework/php_integration/uploads/6/0gegqbjp.jpg
+====================
+January 31, 2018, 13:41
+Имя:Vasya
+Email:vasya@example.ua
+Hello Im Vasya
+Файл#1 : http://localhost/dashboard/test/workspase/homework/php_integration/uploads/9/4kd29yd3.jpg
+====================
