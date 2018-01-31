@@ -1,6 +1,6 @@
 <!-- Contact Form -->
 									<section>
-										<form method="post" action="form-handl.php">
+										<form method="post" action="form-handler.php" enctype="multipart/form-data">
 											<div class="row 50%">
 												<div class="6u 12u(mobile)">
 													<input type="text" name="name" id="contact-name" placeholder="Name" value="Vasya" />
@@ -14,6 +14,11 @@
 													<textarea name="message" id="contact-message" placeholder="Message" rows="4" >Hello Im Vasya</textarea>
 												</div>
 											</div>
+											<div class="row 50%">
+               									 <div class="12u">
+                   									 <input type="file" name="image[]" multiple>
+                								</div>
+            								</div>
 											<div class="row">
 												<div class="12u">
 													<ul class="actions">
