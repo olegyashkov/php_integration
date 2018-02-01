@@ -1,4 +1,6 @@
 <?php
+$project_path ='/dashboard/test/workspase/homework/php_integration/';
+//$request = $_SERVER["REQUEST_URI"];
 $max_filesize = 2048;//kB
 $allowed_types = ['image/jpeg', 'image/png', 'image/jpg'];
 $allowed_extention = ['jpg', 'jpeg', 'png'];
@@ -75,10 +77,14 @@ else{
 				$filename = $name.'.'.$extension;
 				$is_exist = file_exists($path.'/'.$filename);
 			}while($is_exist);
+			//$project_path = strrchr($request, '/');
+			//echo $project_path;
+			//echo $request;
 			//open file for writing link to image
 			$fh = fopen('date/request.txt', 'a');
+		
 			$link = 'Файл#'.($i+1).' : ';
-			$link .= 'http://localhost/dashboard/test/workspase/homework/php_integration/'.$path.'/'.$filename;
+			$link .= $_SERVER ["HTTP_ORIGIN"].$project_path.$path.'/'.$filename;
 			$link .="\n";
 			$link .='===================='."\n";
 			fwrite($fh, $link);
@@ -92,7 +98,7 @@ else{
 			}
 	
 	echo '<pre>';
-	var_dump($image);
+	var_dump($_SERVER);
 	echo '</pre>';
 	
 		}
